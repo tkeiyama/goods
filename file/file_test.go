@@ -1,4 +1,4 @@
-package goods
+package file
 
 import (
 	"fmt"
