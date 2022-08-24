@@ -5,13 +5,13 @@ import (
 	"os"
 )
 
-// GetFileNames gets file names on a given path and returns them as a string array.
-func GetFileNames(path string) ([]string, error) {
+// GetNamesInDir returns the names of files or folders in the given directory.
+func GetNamesInDir(dir string) ([]string, error) {
 	var fileNames []string
 
-	files, err := os.ReadDir(path)
+	files, err := os.ReadDir(dir)
 	if err != nil {
-		fmt.Printf("The given path was NOT FOUND: %s", path)
+		fmt.Printf("The given path was NOT FOUND: %s", dir)
 		return nil, err
 	}
 
