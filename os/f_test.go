@@ -24,7 +24,7 @@ func TestGetFileNames(t *testing.T) {
 		fmt.Println("I don't know what's happening.")
 		return
 	}
-	fileNames, err := GetNamesInDir(pwd)
+	fileNames, err := ReadNames(pwd)
 	if err != nil {
 		fmt.Println("It seems the GetFileNames function doesn't work correctly")
 		return

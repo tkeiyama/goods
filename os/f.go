@@ -6,8 +6,8 @@ import (
 	"os"
 )
 
-// GetNamesInDir returns the names of files or folders in the given directory.
-func GetNamesInDir(dir string) ([]string, error) {
+// ReadNames returns the names of files or folders in the given directory.
+func ReadNames(dir string) ([]string, error) {
 	var fileNames []string
 
 	files, err := os.ReadDir(dir)
