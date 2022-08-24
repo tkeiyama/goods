@@ -1,4 +1,4 @@
-package file
+package os
 
 import (
 	"fmt"
@@ -16,7 +16,7 @@ func isIncluded(t *testing.T, list []string, str string) bool {
 	return false
 }
 
-const FILE_NAME = "file.go"
+const FILE_NAME = "f.go"
 
 func TestGetFileNames(t *testing.T) {
 	pwd, err := os.Getwd()

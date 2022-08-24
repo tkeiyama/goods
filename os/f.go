@@ -1,4 +1,5 @@
-package file
+// the f means this file treats things about files and folders
+package os
 
 import (
 	"fmt"
