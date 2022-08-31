@@ -9,6 +9,7 @@ import (
 	"strings"
 )
 
+// Unzip extracts a zip file which is on the src directory to the dest directory.
 func Unzip(src, dest string) error {
 	r, err := zip.OpenReader(src)
 	if err != nil {
